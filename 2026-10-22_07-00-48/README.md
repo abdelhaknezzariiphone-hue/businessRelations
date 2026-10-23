@@ -2,7 +2,7 @@
 **Session:** Oct 22 2026 · 4 Documents  
 **Date:** 2026-10-22  
 **Entities:** 20 · **Co-occurrence pairs:** 16  
-**Formula:** Correlation = (positive − negative mentions) ÷ total mentions
+**Formula:** Correlation = (positive − negative mentions) / total mentions
 
 ---
 
@@ -10,93 +10,100 @@
 
 ![Full Heatmap](./heatmap_full.png)
 
-> **Green** = strong positive co-occurrence · **Red** = conflict/rivalry · **Grey** = no documented relation
+> **Green** = strong positive · **Red** = conflict/rivalry · **Grey** = no documented relation
 
 ---
 
-## 2. Stock-Level Correlation Heatmap
+## 2. All Entity Pairs — Correlation Table
+
+![All Pairs Table](./table_all_pairs.png)
+
+| Entity A | Entity B | Type | Pos | Neg | Total | Corr | Signal |
+|----------|----------|------|-----|-----|-------|------|--------|
+| Tesla | SpaceX | M&A / Collaboration | 7 | 3 | 10 | **+0.40** | Positive |
+| Akzo Nobel | Axalta | M&A | 2 | 0 | 2 | **+1.00** | Strong Pos |
+| Hudbay | Mitsubishi | M&A / JV | 2 | 0 | 2 | **+1.00** | Strong Pos |
+| SMCI | Dell | AI Infra Co-movement | 2 | 0 | 2 | **+1.00** | Strong Pos |
+| SMCI | HPE | AI Infra Co-movement | 2 | 0 | 2 | **+1.00** | Strong Pos |
+| Dell | HPE | AI Infra Co-movement | 1 | 0 | 1 | **+1.00** | Strong Pos |
+| Anthropic | Nasdaq | Strategic Partnership | 3 | 0 | 3 | **+1.00** | Strong Pos |
+| Barclays | Tesla | Financial Analysis | 2 | 0 | 2 | **+1.00** | Strong Pos |
+| Barclays | SpaceX | Financial Analysis | 1 | 0 | 1 | **+1.00** | Strong Pos |
+| GE Vernova | Vistra | Energy Co-movement | 1 | 0 | 1 | **+1.00** | Strong Pos |
+| CoreWeave | SpaceX | Tech Co-movement | 1 | 0 | 1 | **+1.00** | Strong Pos |
+| Am.Airlines | Southwest | Airline Sector Peers | 1 | 0 | 1 | **+1.00** | Strong Pos |
+| Anthropic | SpaceX | IPO Benchmark | 1 | 0 | 1 | **+1.00** | Strong Pos |
+| SpaceX | AT&T | Competition | 0 | 2 | 2 | **-1.00** | Strong Neg |
+| NYSE | Nasdaq | Competition | 0 | 3 | 3 | **-1.00** | Strong Neg |
+| Tesla | Berkshire | Investor Rotation | 0 | 1 | 1 | **-1.00** | Strong Neg |
+
+---
+
+## 3. Traded Stock Pairs — Correlation Table
+
+![Stock Table](./table_stocks.png)
+
+| Pair | Ticker A | Ticker B | Type | Corr | Signal |
+|------|----------|----------|------|------|--------|
+| Tesla / SpaceX | TSLA | SPCX | M&A / Collaboration | **+0.40** | Positive |
+| SMCI / Dell | SMCI | DELL | AI Infra Co-movement | **+1.00** | Strong Pos |
+| SMCI / HPE | SMCI | HPE | AI Infra Co-movement | **+1.00** | Strong Pos |
+| Dell / HPE | DELL | HPE | AI Infra Co-movement | **+1.00** | Strong Pos |
+| GE Vernova / Vistra | GEV | VST | Energy Co-movement | **+1.00** | Strong Pos |
+| CoreWeave / SpaceX | CRWV | SPCX | Tech Co-movement | **+1.00** | Strong Pos |
+| Am.Airlines / Southwest | AAL | LUV | Airline Sector Peers | **+1.00** | Strong Pos |
+| Tesla / Berkshire | TSLA | BRK.B | Investor Rotation | **-1.00** | Strong Neg |
+| Nasdaq / NYSE | NDAQ | ICE | Exchange Rivalry | **-1.00** | Strong Neg |
+
+---
+
+## 4. Stock-Level Correlation Heatmap
 
 ![Stock Heatmap](./heatmap_stocks.png)
 
-| Cluster | Tickers | Signal |
-|---------|---------|--------|
-| Musk Ecosystem | TSLA · SPCX · CRWV | Mixed (+0.40 to +1.00) |
-| AI Infra | SMCI · DELL · HPE | Perfect +1.00 (AI server demand) |
-| Energy | GEV · VST | Perfect +1.00 (sector co-movement) |
-| Airlines | AAL · LUV | Perfect +1.00 (sector peers, Q3 results) |
-| Exchange Rivalry | NDAQ · ICE | Strongest negative -1.00 |
-| Inverse | TSLA · BRK.B | -1.00 (investor rotation out of AI) |
-
 ---
 
-## 3. Pairwise Ranking — All Non-Zero Stock Pairs
+## 5. Pairwise Ranking — All Non-Zero Stock Pairs
 
 ![Lollipop Chart](./heatmap_stocks_lollipop.png)
 
 ---
 
-## 4. Top Positive Relations
-
-| Entity A | Entity B | Score | Type |
-|----------|----------|-------|------|
-| SMCI | Dell | **+1.00** | AI Infra Co-movement |
-| SMCI | HPE | **+1.00** | AI Infra Co-movement |
-| Dell | HPE | **+1.00** | AI Infra Co-movement |
-| Akzo Nobel | Axalta | **+1.00** | M&A |
-| Hudbay | Mitsubishi | **+1.00** | M&A / JV |
-| Anthropic | Nasdaq | **+1.00** | Strategic Partnership (IPO) |
-| GE Vernova | Vistra | **+1.00** | Energy Sector Co-movement |
-| CoreWeave | SpaceX | **+1.00** | Tech Sector Co-movement |
-| Am. Airlines | Southwest | **+1.00** | Airline Sector Peers |
-| Barclays | Tesla | **+1.00** | Financial Analysis |
-
----
-
-## 5. Top Negative Relations
-
-| Entity A | Entity B | Score | Type |
-|----------|----------|-------|------|
-| SpaceX | AT&T | **-1.00** | Competition (mobile telecom) |
-| NYSE | Nasdaq | **-1.00** | Exchange IPO rivalry |
-| Tesla | Berkshire | **-1.00** | Investor rotation (AI to safety) |
-
----
-
 ## 6. Key Findings
 
-- **Tesla x SpaceX (+0.40)** is the only partial score — merger is real but contested (7 positive, 3 negative signals)
-- **AI server cluster** (SMCI / Dell / HPE) perfect +1.00 — all riding Meta $825B AI buildout commitment
-- **SpaceX x AT&T (-1.00)** — SpaceX Starlink mobile directly attacking AT&T core wireless business
-- **Tesla x Berkshire (-1.00)** — investors rotating out of AI/tech into Berkshire as safe haven
-- **Nasdaq x NYSE (-1.00)** — Anthropic IPO set to give Nasdaq another record win in zero-sum exchange competition
-- **Average correlation across all 16 pairs: +0.588** — overall positive document day
+- **Tesla x SpaceX (+0.40)** only partial score — merger real but contested (7 pos, 3 neg signals)
+- **AI server cluster** (SMCI / Dell / HPE) perfect +1.00 — riding Meta $825B AI buildout
+- **SpaceX x AT&T (-1.00)** — SpaceX Starlink mobile directly attacking AT&T wireless
+- **Tesla x Berkshire (-1.00)** — investors rotating out of AI/tech into Berkshire
+- **Nasdaq x NYSE (-1.00)** — Anthropic IPO gives Nasdaq another record win
+- **Average correlation: +0.588** — overall positive document session
 
 ---
 
 ## 7. Entity to Stock Ticker Map
 
-| Entity | Company | Ticker | Exchange |
-|--------|---------|--------|----------|
-| Tesla | Tesla, Inc. | **TSLA** | NASDAQ |
-| SpaceX | Space Exploration Technologies (ETF proxy) | **SPCX** | NYSE |
-| CoreWeave | CoreWeave, Inc. | **CRWV** | NASDAQ |
-| Berkshire | Berkshire Hathaway | **BRK.B** | NYSE |
-| SMCI | Super Micro Computer | **SMCI** | NASDAQ |
-| Dell | Dell Technologies | **DELL** | NYSE |
-| HPE | Hewlett Packard Enterprise | **HPE** | NYSE |
-| Nasdaq | Nasdaq, Inc. | **NDAQ** | NASDAQ |
-| NYSE | Intercontinental Exchange | **ICE** | NYSE |
-| GE Vernova | GE Vernova Inc. | **GEV** | NYSE |
-| Vistra | Vistra Corp. | **VST** | NYSE |
-| Am. Airlines | American Airlines Group | **AAL** | NASDAQ |
-| Southwest | Southwest Airlines | **LUV** | NYSE |
-| Anthropic | Anthropic PBC | — | Private |
-| AT&T | AT&T Inc. | **T** | NYSE |
-| Akzo Nobel | Akzo Nobel N.V. | **AKZA.AS** | Euronext |
-| Axalta | Axalta Coating Systems | **AXTA** | NYSE |
-| Hudbay | Hudbay Minerals | **HBM** | NYSE |
-| Mitsubishi | Mitsubishi Corporation | **8058.T** | TSE |
-| Barclays | Barclays PLC | **BCS** | NYSE |
+| Entity | Ticker | Exchange |
+|--------|--------|----------|
+| Tesla | TSLA | NASDAQ |
+| SpaceX (ETF proxy) | SPCX | NYSE |
+| CoreWeave | CRWV | NASDAQ |
+| Berkshire Hathaway | BRK.B | NYSE |
+| Super Micro Computer | SMCI | NASDAQ |
+| Dell Technologies | DELL | NYSE |
+| Hewlett Packard Enterprise | HPE | NYSE |
+| Nasdaq Inc. | NDAQ | NASDAQ |
+| NYSE / Intercontinental Exchange | ICE | NYSE |
+| GE Vernova | GEV | NYSE |
+| Vistra Corp. | VST | NYSE |
+| American Airlines | AAL | NASDAQ |
+| Southwest Airlines | LUV | NYSE |
+| AT&T | T | NYSE |
+| Akzo Nobel | AKZA.AS | Euronext |
+| Axalta | AXTA | NYSE |
+| Hudbay Minerals | HBM | NYSE |
+| Mitsubishi Corp. | 8058.T | TSE |
+| Barclays | BCS | NYSE |
+| Anthropic | — | Private |
 
 ---
 
@@ -106,8 +113,9 @@
 Correlation(A, B) = (positive_cooccurrences - negative_cooccurrences) / total_cooccurrences
 ```
 
-Result is in [-1, +1]. Positive = merger/partnership/collaboration/co-movement.
-Negative = competition/legal conflict/inverse investor flow.
+- **Positive**: merger, partnership, collaboration, shared benefit, sector co-movement
+- **Negative**: competition, legal conflict, opposing interests, inverse investor flow
+- Result in [-1, +1]
 
 ---
 
@@ -115,10 +123,10 @@ Negative = competition/legal conflict/inverse investor flow.
 
 | File | Type | Timestamp | Source |
 |------|------|-----------|--------|
-| WSJ Markets A.M. | .eml | 2026-10-22 06:43 | Wall Street Journal / Spencer Jakab |
+| WSJ Markets A.M. | .eml | 2026-10-22 06:43 | Wall Street Journal |
 | eToro Daily Bites | .eml | 2026-10-22 11:57 | eToro |
 | WSJ Markets P.M. (Tech Slump) | .eml | 2026-10-22 16:31 | Wall Street Journal |
-| WSJNewsPaper-10-22-2026 | .pdf | 2026-10-22 | Wall Street Journal print edition |
+| WSJNewsPaper-10-22-2026 | .pdf | 2026-10-22 | WSJ print edition |
 
 ---
 
