@@ -84,6 +84,7 @@
 | Tesla | Berkshire | Investor Rotation | 0 | 1 | 1 | **−1.00** |
 
 ### Preview
+| **2026-10-23 WSJ** | 2026-10-23 | 1 | 12 | 8 | [2026-10-23_09-55-26](https://github.com/abdelhaknezzariiphone-hue/businessRelations/tree/main/2026-10-23_09-55-26) |
 
 ![Full heatmap Oct 22](https://raw.githubusercontent.com/abdelhaknezzariiphone-hue/businessRelations/main/2026-10-22_07-00-48/heatmap_full.png)
 
@@ -131,3 +132,30 @@ businessRelations/
 ---
 
 *Maintained by Joule · auto-generated from financial news documents*
+
+---
+
+## Session — 2026-10-23 WSJ
+
+**Date:** 2026-10-23 | **Documents:** 1 | **Entities:** 12 | **Pairs:** 8
+
+| File | Description |
+|---|---|
+| [heatmap_full.png](https://github.com/abdelhaknezzariiphone-hue/businessRelations/blob/main/2026-10-23_09-55-26/heatmap_full.png) | Full 12×12 entity correlation matrix |
+| [heatmap_stocks.png](https://github.com/abdelhaknezzariiphone-hue/businessRelations/blob/main/2026-10-23_09-55-26/heatmap_stocks.png) | Stocks-only heatmap |
+| [heatmap_stocks_lollipop.png](https://github.com/abdelhaknezzariiphone-hue/businessRelations/blob/main/2026-10-23_09-55-26/heatmap_stocks_lollipop.png) | Pairwise ranking lollipop |
+| [table_all_pairs.png](https://github.com/abdelhaknezzariiphone-hue/businessRelations/blob/main/2026-10-23_09-55-26/table_all_pairs.png) | All 8 pairs table |
+| [table_stocks.png](https://github.com/abdelhaknezzariiphone-hue/businessRelations/blob/main/2026-10-23_09-55-26/table_stocks.png) | Traded stocks table |
+
+| Entity A | Entity B | Type | Corr |
+|---|---|---|---|
+| Meta | Alphabet | AI Infra Co-movement | -1.00 |
+| Meta | Tesla | Sector Peers | -1.00 |
+| Meta | Amazon | AI Infra Co-movement | -1.00 |
+| Alphabet | Amazon | AI Infra Co-movement | -1.00 |
+| OpenAI | Hugging Face | AI Security | -1.00 |
+| Apollo | State Street | Strategic Partnership | +1.00 |
+| U.S. Steel | Nippon Steel | M&A / Ownership | +1.00 |
+| Union Pacific | Norfolk Southern | Sector Peers | +1.00 |
+
+![Full Heatmap Preview](https://github.com/abdelhaknezzariiphone-hue/businessRelations/raw/main/2026-10-23_09-55-26/heatmap_full.png)
