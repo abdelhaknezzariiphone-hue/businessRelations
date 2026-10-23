@@ -12,6 +12,7 @@
 |---------|------|------|----------|-------|--------|
 | **T1 + T2** | 2026-10-21 | 8 | 35 | 153 | [2026-10-21\_07-00-48](https://github.com/abdelhaknezzariiphone-hue/businessRelations/tree/main/2026-10-21_07-00-48) |
 | **Oct 22** | 2026-10-22 | 4 | 20 | 16 | [2026-10-22\_07-00-48](https://github.com/abdelhaknezzariiphone-hue/businessRelations/tree/main/2026-10-22_07-00-48) |
+| **Oct 23 WSJ** | 2026-10-23 | 1 | 12 | 8 | [2026-10-23\_09-55-26](https://github.com/abdelhaknezzariiphone-hue/businessRelations/tree/main/2026-10-23_09-55-26) |
 
 ---
 
@@ -84,7 +85,6 @@
 | Tesla | Berkshire | Investor Rotation | 0 | 1 | 1 | **−1.00** |
 
 ### Preview
-| **2026-10-23 WSJ** | 2026-10-23 | 1 | 12 | 8 | [2026-10-23_09-55-26](https://github.com/abdelhaknezzariiphone-hue/businessRelations/tree/main/2026-10-23_09-55-26) |
 
 ![Full heatmap Oct 22](https://raw.githubusercontent.com/abdelhaknezzariiphone-hue/businessRelations/main/2026-10-22_07-00-48/heatmap_full.png)
 
@@ -127,6 +127,13 @@ businessRelations/
     heatmap_stocks_lollipop.png      <- pairwise lollipop
     table_all_pairs.png              <- all 16 pairs table
     table_stocks.png                 <- 9 stock pairs table
+  2026-10-23_09-55-26/
+    README.md                        <- session report
+    heatmap_full.png                 <- 12x12 entity matrix
+    heatmap_stocks.png               <- traded tickers heatmap
+    heatmap_stocks_lollipop.png      <- pairwise lollipop
+    table_all_pairs.png              <- all 8 pairs table
+    table_stocks.png                 <- 7 stock pairs table
 ```
 
 ---
@@ -135,27 +142,36 @@ businessRelations/
 
 ---
 
-## Session — 2026-10-23 WSJ
+## Session 3 — 2026-10-23 (1 document · 12 entities · 8 pairs)
 
-**Date:** 2026-10-23 | **Documents:** 1 | **Entities:** 12 | **Pairs:** 8
+**Folder:** [`2026-10-23_09-55-26`](https://github.com/abdelhaknezzariiphone-hue/businessRelations/tree/main/2026-10-23_09-55-26)
 
-| File | Description |
-|---|---|
-| [heatmap_full.png](https://github.com/abdelhaknezzariiphone-hue/businessRelations/blob/main/2026-10-23_09-55-26/heatmap_full.png) | Full 12×12 entity correlation matrix |
-| [heatmap_stocks.png](https://github.com/abdelhaknezzariiphone-hue/businessRelations/blob/main/2026-10-23_09-55-26/heatmap_stocks.png) | Stocks-only heatmap |
-| [heatmap_stocks_lollipop.png](https://github.com/abdelhaknezzariiphone-hue/businessRelations/blob/main/2026-10-23_09-55-26/heatmap_stocks_lollipop.png) | Pairwise ranking lollipop |
-| [table_all_pairs.png](https://github.com/abdelhaknezzariiphone-hue/businessRelations/blob/main/2026-10-23_09-55-26/table_all_pairs.png) | All 8 pairs table |
-| [table_stocks.png](https://github.com/abdelhaknezzariiphone-hue/businessRelations/blob/main/2026-10-23_09-55-26/table_stocks.png) | Traded stocks table |
+### Files
 
-| Entity A | Entity B | Type | Corr |
-|---|---|---|---|
-| Meta | Alphabet | AI Infra Co-movement | -1.00 |
-| Meta | Tesla | Sector Peers | -1.00 |
-| Meta | Amazon | AI Infra Co-movement | -1.00 |
-| Alphabet | Amazon | AI Infra Co-movement | -1.00 |
-| OpenAI | Hugging Face | AI Security | -1.00 |
-| Apollo | State Street | Strategic Partnership | +1.00 |
-| U.S. Steel | Nippon Steel | M&A / Ownership | +1.00 |
-| Union Pacific | Norfolk Southern | Sector Peers | +1.00 |
+| File | Description | Size |
+|------|-------------|------|
+| [`README.md`](https://github.com/abdelhaknezzariiphone-hue/businessRelations/blob/main/2026-10-23_09-55-26/README.md) | Full session report — tables, findings, stock map | 3.6 KB |
+| [`heatmap_full.png`](https://github.com/abdelhaknezzariiphone-hue/businessRelations/blob/main/2026-10-23_09-55-26/heatmap_full.png) | 12×12 full entity correlation matrix | 83 KB |
+| [`heatmap_stocks.png`](https://github.com/abdelhaknezzariiphone-hue/businessRelations/blob/main/2026-10-23_09-55-26/heatmap_stocks.png) | Stock-level heatmap (10 traded tickers) | 91 KB |
+| [`heatmap_stocks_lollipop.png`](https://github.com/abdelhaknezzariiphone-hue/businessRelations/blob/main/2026-10-23_09-55-26/heatmap_stocks_lollipop.png) | Pairwise ranking lollipop — 7 stock pairs | 57 KB |
+| [`table_all_pairs.png`](https://github.com/abdelhaknezzariiphone-hue/businessRelations/blob/main/2026-10-23_09-55-26/table_all_pairs.png) | All 8 pairs correlation table | 68 KB |
+| [`table_stocks.png`](https://github.com/abdelhaknezzariiphone-hue/businessRelations/blob/main/2026-10-23_09-55-26/table_stocks.png) | 7 traded stock pairs styled table | 68 KB |
 
-![Full Heatmap Preview](https://github.com/abdelhaknezzariiphone-hue/businessRelations/raw/main/2026-10-23_09-55-26/heatmap_full.png)
+### Correlation Table (all 8 pairs)
+
+| Entity A | Entity B | Type | Pos | Neg | Total | Corr |
+|----------|----------|------|:---:|:---:|:-----:|-----:|
+| Meta | Alphabet | AI Infra Co-movement | 0 | 2 | 2 | **−1.00** |
+| Meta | Tesla | Sector Peers | 0 | 1 | 1 | **−1.00** |
+| Meta | Amazon | AI Infra Co-movement | 0 | 1 | 1 | **−1.00** |
+| Alphabet | Amazon | AI Infra Co-movement | 0 | 1 | 1 | **−1.00** |
+| OpenAI | Hugging Face | AI Security | 0 | 1 | 1 | **−1.00** |
+| Apollo | State Street | Strategic Partnership | 1 | 0 | 1 | **+1.00** |
+| U.S. Steel | Nippon Steel | M&A / Ownership | 1 | 0 | 1 | **+1.00** |
+| Union Pacific | Norfolk Southern | Sector Peers | 1 | 0 | 1 | **+1.00** |
+
+### Preview
+
+![Full heatmap Oct 23](https://raw.githubusercontent.com/abdelhaknezzariiphone-hue/businessRelations/main/2026-10-23_09-55-26/heatmap_full.png)
+
+![All pairs table Oct 23](https://raw.githubusercontent.com/abdelhaknezzariiphone-hue/businessRelations/main/2026-10-23_09-55-26/table_all_pairs.png)
