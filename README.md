@@ -29,6 +29,7 @@
 | [`heatmap_clusters.png`](https://github.com/abdelhaknezzariiphone-hue/businessRelations/blob/main/2026-10-21_07-00-48/heatmap_clusters.png) | Inter-cluster correlation overview (7 clusters) | 60 KB |
 | [`heatmap_stocks.png`](https://github.com/abdelhaknezzariiphone-hue/businessRelations/blob/main/2026-10-21_07-00-48/heatmap_stocks.png) | Stock-level heatmap (publicly traded tickers) | 92 KB |
 | [`heatmap_stocks_lollipop.png`](https://github.com/abdelhaknezzariiphone-hue/businessRelations/blob/main/2026-10-21_07-00-48/heatmap_stocks_lollipop.png) | Pairwise ranking lollipop — all non-zero stock pairs | 111 KB |
+| **Session 11** | 2026-10-24 | 4 | 16 | 13 | [2026-10-24_11-40-49](https://github.com/abdelhaknezzariiphone-hue/businessRelations/tree/main/2026-10-24_11-40-49) |
 
 ### Cluster Summary
 
@@ -175,3 +176,44 @@ businessRelations/
 ![Full heatmap Oct 23](https://raw.githubusercontent.com/abdelhaknezzariiphone-hue/businessRelations/main/2026-10-23_09-55-26/heatmap_full.png)
 
 ![All pairs table Oct 23](https://raw.githubusercontent.com/abdelhaknezzariiphone-hue/businessRelations/main/2026-10-23_09-55-26/table_all_pairs.png)
+
+---
+
+## Session 11
+
+**Folder:** [2026-10-24_11-40-49](https://github.com/abdelhaknezzariiphone-hue/businessRelations/tree/main/2026-10-24_11-40-49)
+
+### Files
+
+| File | Description | Size |
+|---|---|---|
+| [README.md](https://github.com/abdelhaknezzariiphone-hue/businessRelations/tree/main/2026-10-24_11-40-49/README.md) | Session report | 3.9 KB |
+| [heatmap_full.png](https://github.com/abdelhaknezzariiphone-hue/businessRelations/tree/main/2026-10-24_11-40-49/heatmap_full.png) | Full 16×16 entity correlation matrix | 99 KB |
+| [heatmap_stocks.png](https://github.com/abdelhaknezzariiphone-hue/businessRelations/tree/main/2026-10-24_11-40-49/heatmap_stocks.png) | Traded stocks heatmap | 94 KB |
+| [heatmap_stocks_lollipop.png](https://github.com/abdelhaknezzariiphone-hue/businessRelations/tree/main/2026-10-24_11-40-49/heatmap_stocks_lollipop.png) | Pairwise ranking lollipop | 61 KB |
+| [table_all_pairs.png](https://github.com/abdelhaknezzariiphone-hue/businessRelations/tree/main/2026-10-24_11-40-49/table_all_pairs.png) | All 13 pairs styled table | 104 KB |
+| [table_stocks.png](https://github.com/abdelhaknezzariiphone-hue/businessRelations/tree/main/2026-10-24_11-40-49/table_stocks.png) | 7 traded pairs styled table | 71 KB |
+
+### Correlation Table (all 13 pairs)
+
+| Entity A | Entity B | Type | Pos | Neg | Total | Corr |
+|---|---|---|---|---|---|---|
+| Meta | Procter & Gamble | Investor Rotation | 0 | 1 | 1 | **-1.00** |
+| SpaceX | AT&T | Direct Competition | 0 | 1 | 1 | **-1.00** |
+| SpaceX | Verizon | Direct Competition | 0 | 1 | 1 | **-1.00** |
+| Anthropic | SpaceX | IPO Benchmark | 1 | 0 | 1 | **+1.00** |
+| Apple | Nvidia | Market Cap Benchmark | 1 | 0 | 1 | **+1.00** |
+| Check Point | Palo Alto Networks | Sector Peers | 1 | 0 | 1 | **+1.00** |
+| Harvard | SpaceX | Financial Backing | 1 | 0 | 1 | **+1.00** |
+| OpenAI | Robinhood | Strategic Investment | 1 | 0 | 1 | **+1.00** |
+| OpenAI | SpaceX | Co-Investment Portfolio | 1 | 0 | 1 | **+1.00** |
+| SpaceX | Robinhood | Strategic Investment | 1 | 0 | 1 | **+1.00** |
+| SpaceX | Tesla | M&A Speculation | 1 | 0 | 1 | **+1.00** |
+| Stanford | SpaceX | Financial Backing | 1 | 0 | 1 | **+1.00** |
+| UNC | SpaceX | Financial Backing | 1 | 0 | 1 | **+1.00** |
+
+### Preview
+
+![Full Heatmap](https://raw.githubusercontent.com/abdelhaknezzariiphone-hue/businessRelations/main/2026-10-24_11-40-49/heatmap_full.png)
+
+![All Pairs Table](https://raw.githubusercontent.com/abdelhaknezzariiphone-hue/businessRelations/main/2026-10-24_11-40-49/table_all_pairs.png)
